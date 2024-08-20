@@ -44,7 +44,7 @@ function App() {
       if (image) {
         formData.append('image', image);
       }
-      const response = await axios.post('http://localhost:5000/query', formData, {
+      const response = await axios.post('https://home-maintenance-rag-system.onrender.com/query', formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
@@ -85,6 +85,7 @@ function App() {
                     marginTop: "20px",
                     padding: "3px",
                   }}
+                  alt="conversationalist"
                 />
                 <div className={`${chat.person}-message`}>
                   {chat.image && <img src={chat.image} alt="Uploaded" style={{ maxWidth: '100%', marginTop: '10px' }} />}
