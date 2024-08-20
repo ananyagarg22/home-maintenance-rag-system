@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/home-maintenance-rag-system/static/css/main.b08ae007.css",
+    "main.js": "/home-maintenance-rag-system/static/js/main.d1a0411a.js",
+    "index.html": "/home-maintenance-rag-system/index.html",
+    "main.b08ae007.css.map": "/home-maintenance-rag-system/static/css/main.b08ae007.css.map",
+    "main.d1a0411a.js.map": "/home-maintenance-rag-system/static/js/main.d1a0411a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b08ae007.css",
+    "static/js/main.d1a0411a.js"
+  ]
+}
