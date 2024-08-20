@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap');
+
+#chat-window {
+  font-family: "Montserrat", sans-serif;
+  width: 80vw;
+  height: 90vh;
+  padding: 5vh 10vw;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+}
+
+#message-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  margin: 0 15vw;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+
+#message-input input {
+  width: 70vw;
+  height: 30px;
+  border:none;
+  padding: 5px 0;
+  /* margin: 0 10px; */
+}
+
+#message-input input:focus {
+  outline: none;
+}
+
+#upload-file {
+  display: none;
+}
+
+#upload, #submit {
+  width: 80px;
+  height: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  border-radius: 40px;
+}
+
+#upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#submit {
+  border: none;
+  cursor: pointer;
+}
+
+#chat-history {
+  width: 100%;
+  height: 80%;
+  overflow-y: auto;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#chat-history::-webkit-scrollbar {
+  display: none;
+}
+
+#chat-history .bot-container, #chat-history .user-container {
+  width: 100%;
+}
+
+.bot-container, .user-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user-container {
+  flex-direction: row-reverse;
+}
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  color: grey;
+  font-size: 80%;
+}
+
+.bot-message, .user-message {
+  text-wrap: pretty;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.bot-message {
+  width: fit-content;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: rgb(0, 140, 255);
+  width: fit-content;
+  color: white;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
