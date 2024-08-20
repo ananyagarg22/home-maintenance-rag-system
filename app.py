@@ -2,6 +2,9 @@
 from flask import Flask, request, jsonify
 from doc_retrieval import provide_ans
 from flask_cors import CORS
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -22,4 +25,4 @@ def query_documents():
     return jsonify({"answer": response, "context": prompt_with_context, "sources": sources})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=os.environ['PORT'])
